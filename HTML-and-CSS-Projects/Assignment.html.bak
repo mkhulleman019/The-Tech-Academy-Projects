@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title> My HTML Assignment</title>
+		<meta charset=UTF-8>
+	</head>
+	<header>
+		<a href="Assignment.html"> Home </a>
+		<a href="dog.html"> Dog Picture</a>
+		<a href="dogVideo.html"> Dog Video</a>
+	</header>
+		<body>
+			<h1> THIS IS A HEADING! </h1>
+				<h3> This is a sub-heading</h3>
+					<h6> Here is a smaller sub-heading </h6>
+						<p> This is a paragraph</p>
+			<main> 
+				<p> Below is a quote form Utah's Website in regards to the beautiful Tony Grove</p>
+					<blockquote cite ="https://utah.com/hiking/tony-grove-lake"> The land around this picturesque mountain lake in the Logan area has been designated a US 
+										Forest Service Wildflower Viewing Area. An easy trail circles the lake. Other trails from 
+										Tony Grove take you either deep into the Mt. Naomi Wilderness or up to White Pine Lake. All 
+										trails are scenic and provide wonderful opportunities to view flowers, which are at their 
+										peaknfrom July through early August.
+
+										Fall is also a great time to visit this area. Fall colors through Logan Canyon are nothing 
+										short of spectacular.
+					</blockquote>
+
+						<p> Below is an image of the gorgeous lake at Tony Grove in early October.</p>
+								<img src="./images/testImage.jpg" alt="Dried flowers in front of The Bandlands in SD" width= 130px height=200px>
+							<br>
+							<br>
+								<a href="corgi.html"> Click here to see a super good boy! </a>
+							<br>
+							<br>
+								<a href="https://www.boredpanda.com/cooper-and-baby-corgi/?utm_source=google&utm_medium=organic&utm_campaign=organic"> Click here to see more pictures of the hansome boy!</a>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/RcFkZHVr9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</main>
+			
+		</body>
+	<footer> MHulleman Designs 2021 </footer>
+</html>

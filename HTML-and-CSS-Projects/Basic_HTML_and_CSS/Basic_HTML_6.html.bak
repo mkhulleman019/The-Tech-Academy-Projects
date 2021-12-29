@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title> HTML Page 6 </title>
+		<meta charset=UTF-8>
+	</head>
+	
+	<header>
+	</header>
+	
+	<body>
+	<!----This section is about Olivia---->
+		<section>
+			<h1> Olivia Christine </h1>
+				<p> Olivia was born <span style= "font-weight:bold;color:green">March 17, 2016.
+				</span> she was born on <span style="font-weight:bold; color:green"> ST.&nbsp;PATRICKS&nbsp;DAY!</span>
+				</p>
+		</section>
+		<br>
+		<br>
+		
+		<!------This section is about Kieran----->
+		<section>
+			<h1> Kieran Gray </h1>
+				<p> Kieran was born on <span style="font-weight: bold; color: purple;"> June 28, 2020. </span>
+				He was born 1 week after our 6th anniversay!
+				</p>
+	</body>
+	
+	<footer>
+		<h6> &#169;MHulleman Designs 2021</h6>

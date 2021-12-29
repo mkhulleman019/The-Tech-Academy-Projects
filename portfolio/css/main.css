@@ -1,0 +1,184 @@
+html {
+    overflow-x: hidden;
+    width:1200px;
+}
+
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+header p{
+    z-index: 100;
+    position: absolute;
+    font-size: 2em;
+    top: -.4em;
+    left: 2%;
+}
+nav{
+    display: inline-block;
+    position: absolute;
+    z-index: 100000;
+    top: 3%;
+    right: 0%;
+}
+
+nav a{
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    padding: .5em;
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.banner h1{
+    z-index: 100;
+    position: absolute;
+    top:1em;
+    left:0;
+    bottom:0;
+    right: 0;
+    font-size: 6em;
+    color: ivory;
+    text-align: center;
+}
+
+.banner img{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo img{
+    z-index: 500;
+    margin-top: -3.3em;
+    margin-left: 55%;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#aboutMe{
+    height: 30%;
+    width: 100%;
+    margin-left:5%;
+    margin-right: 15%;
+    padding: 0%;
+}
+
+.column1{
+    z-index: 100;
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.column2{
+    z-index: 100000;
+    width:30%;
+    float: left;
+    margin-left:0;
+    margin-right: 5%;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+#myWork{
+    height: 30%;
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#myWork .column2 {
+    margin-left: 5%;
+}
+
+#contact .column2{
+    width: 45%;
+    margin-right: -5%;
+    margin-left: -5%;
+}
+
+#contact{
+    height: 30%;
+    width: 100%;
+}
+
+form {
+    width: 90%;
+}
+
+form input[type="email"] {
+    width: 90%;
+    height: 2em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+}
+
+form textarea {
+    width: 90%;
+    height: 140px;
+    margin-bottom: 0;
+}
+
+.formDisclaimer p{
+    font-size: .75em;
+    margin-bottom: 2em;
+}
+
+form button{
+    width: 20%;
+    height: auto;
+}
+
+footer p {
+    font-size: 1em;
+    text-align: left;
+}
+
+.pinkBG {
+    z-index: -100;
+    background-color: #fadbdd;
+    height: 500px;
+    width: 130%;
+}
+
+
+
+/*==============================
+        ANIMATIONS
+==============================*/
+
+nav a:hover{
+    text-decoration: underline;
+    color: ivory;
+}

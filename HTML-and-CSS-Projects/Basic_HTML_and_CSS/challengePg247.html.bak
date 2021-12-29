@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title> Page 247 Challenge </title>
+		<meta charset=UTF-8>
+	</head>
+	
+	<body>
+	<!---- Below is an article--->
+		<article> 
+			<h1> Article <h1>
+				<p> The article section can be used to define a separate element on the page.
+				This can include news stories, blog posts, etc.<br>
+				The importance is that it can be styled separately using CSS.</p>
+		</article>
+		
+	<!---- Opening details tag---->
+		<details> 
+	<!---- Below is a summary---->
+		<summary> Here is a summary </summary>
+		<p> Here is a ton of detailed info on what the summary is about </p>
+	<!---- Closing details tag---->
+		</details>
+		
+	<!---- Time and Datetime Tags---->
+		<p> It is now <time> 11:43 </time>.</p>
+		<p> I will finish studying around <time datetime="2021-12-21 16:00"> today </time>.</p>
+		
+	</body>
+</html>

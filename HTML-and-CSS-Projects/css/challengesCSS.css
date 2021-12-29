@@ -1,0 +1,218 @@
+html {
+    overflow-x: hidden;
+}
+
+body{
+
+}
+
+header {
+    margin-bottom: 3em;
+}
+
+.navbar {
+    background-color: rgba(70, 131, 180, 0.76);
+    position: fixed;
+    text-align: center;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    padding: 3em;
+    color: black;
+    font-weight: 800;
+
+}
+
+main{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.photoContainer {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+main img{
+    width: 100%;
+    filter: sepia(75%);
+    border-radius: 10px ;
+}
+
+p{
+    text-align: center;
+    font-size: 2em;
+}
+
+.textOverlay {
+    z-index: 100;
+    position: absolute;
+    margin-top: -3em;
+    background-color: rgba(255, 235, 205, 0.829);
+    width: 39.6%;
+}
+
+.column{
+    float: left;
+    width: 30%;
+    height: 100px;
+    padding: 2em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    color: slategray;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+
+table {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+.coloredRow {
+    background-color: steelblue;
+    border: 1px solid black;
+}
+
+video {
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-radius: 10px;
+}
+
+
+footer p{
+    font-size: .75em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*==============================
+            ANIMATIONS
+==============================*/
+
+/*NAVBAR Hover*/
+
+.navbar a:hover{
+    color: white;
+}
+
+
+
+/*PhotoContainer Transform*/
+
+.photoFadeContainer {
+    position: relative;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photoFadeContainer img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: none;
+}
+
+.photoOverlay {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(70, 131, 180, 0.911);
+}
+
+.photoFadeContainer:hover .photoOverlay{
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*Photo Text Hover*/
+.textOverlay:hover{
+    background-color: rgba(70, 131, 180, 0.575);
+    color: white;
+}
+
+/*Video Hover Transform*/
+
+.videoContainer {
+    display: block;
+    position: relative;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.videoOverlay {
+    position:absolute;
+    top: 10.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 360px;
+    width: 640px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(70, 131, 180, 0.911);
+    border-radius: 10px ;
+}
+
+.videoContainer:hover .videoOverlay{
+    opacity: 1;
+}
+
+.videoText {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

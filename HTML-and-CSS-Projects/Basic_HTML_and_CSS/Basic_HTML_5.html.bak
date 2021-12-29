@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="Basic_CSS_2.css">
+
+	<body>
+		<p>Some Text</p>
+		<p> Here I am using an entity sign:</p>
+		<br>
+		<p> 60&lt;70 </p>
+	</body>
+</html>

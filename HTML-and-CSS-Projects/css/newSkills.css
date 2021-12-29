@@ -1,0 +1,6 @@
+.container {
+    height: 600px;
+    background-image: linear-gradient( to bottom, darkCyan,indigo);
+    color: white;
+    font-size: 4em;
+}

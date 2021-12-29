@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head> 
+		<title> Corgis are Cute! </title>
+		<meta charset = UTF-8>
+	</head>
+	
+	<header> 
+		<a href="Assignment.html"> Home </a>
+		<a href="corgi.html"> Dog Picture</a>
+		<a href="dogVideo.html"> Dog Video</a>
+	</header>
+	
+		<body>
+			<p> Look at this goodest boy! </p>
+				<img src = "./images/corgi.jpg">
+		</body>
+	<footer>
+		<h6> MHulleman Designs 2021 </h6>
+	</footer>
+	
+</html>
+		
