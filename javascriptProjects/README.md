@@ -1,0 +1,1 @@
+This file will be used for my JavaScript practice and assignments through The Tech Academy.
