@@ -45,44 +45,49 @@ nav a {
     height: auto;
 }
 
-/* Commented out all gallery CSS to see if I could get lightbox to work with W3Schools CSS... Didn't Work
+
 #gallery {
+    position: relative;
     width: 90%;
-    height: auto;
+    max-width: 1200px;
+    height: 900px;
     background-color: #ede0ded1;
     border-radius: 10px;
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 1em;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.galleryContainer {
     margin-left: 5%;
     margin-right: auto;
 }
 
-/*.container-fluid {
+.container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: 5%;
-}*/
+}
 
-/*
+
 #gallery h1{
     text-align: center;
     margin-top:0;
 }
 
-/*
-.container:after{
+
+/*.container:after{ ======= Do not currently need with lightbox css, kept in case of change back
     clear: both;
     display: table;
     content: "";
-}
+}*/
 
 .photo {
     position: relative;
-    line-height: 0;
-    margin-bottom: 2em;
-    margin-left: 5%;
+    line-height: normal;
     overflow: hidden;
     border-radius: 8px;
     padding: 1px;
@@ -93,8 +98,8 @@ nav a {
 
 .container {
     text-align: center;
-    margin: 1.5em;
-    width: 300px;
+    margin: .5em;
+    width: 30%;
     height: auto;
     float: left;
 }
@@ -106,7 +111,7 @@ nav a {
 }
 
 
-.textOverlay{
+/*.textOverlay{ ======= Do not currently need with lightbox css, kept in case of change back
     color: #fff;
     position: absolute;
     top: 0;
@@ -115,8 +120,8 @@ nav a {
     left: 0;
     padding-left: 20px;
     padding-right: 20px;
-    justify-content: center;  /*for centering text inside .photo-overlay
-    align-items: center;
+    justify-content: center;  /*for centering text inside .photo-overlay*/
+    /*align-items: center;
     background: rgba(0,0,0,0.5);
 }
 
@@ -138,35 +143,36 @@ nav a {
     opacity: 1;
 }
 
-.photo img {
+/*.photo img {
     transition: transform .5s;
     transform-origin: 50% 50%;
 }
 
-.photo:hover img {
+/*.photo:hover img {
     transform: scale(1.1);
-}
+}*/
 
 .photo img {
-    height: 100px;
-    width: auto;
+    width: 300px;
+    height: auto;
     border: solid 1px gray;
     border-radius: 5px;
 }
 
 
-.textOverlay {
+/*.textOverlay { ======= Do not currently need with lightbox css, kept in case of change back
     font-size: 1em;
     z-index: 5;
 }
 
 .textOverlay h3 {
     font-weight: bold;
-}
-*/
+}*/
+
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     font-variant: small-caps;
+    margin-bottom: 10px;
 }
 
 p {
@@ -239,15 +245,16 @@ footer {
 /* Create 3 equal rows that float next to each other*/
 .photo {
     float: left;
-    width: 30%;
+    width: 300px;
+    height: auto;
 }
 
 /*Modal Background*/
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding: 100px;
+    z-index: 100;
+    padding: 50px;
     left: 0;
     top: 0;
     width: 100%;
@@ -262,7 +269,6 @@ footer {
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 90%;
     max-width: 1200px;
 }
 
@@ -297,7 +303,7 @@ footer {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -307,8 +313,8 @@ footer {
 }
 
 /*Position the Next button to the right */
-.next {
-    right: 0;
+a.next {
+    right: 170px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -337,6 +343,8 @@ footer {
 
 .img.demo {
     opacity: 0.6;
+    width: 300px;
+    height: auto;
 }
 
 .active,
@@ -349,6 +357,10 @@ img.hover-shadow{
 }
 
 .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2); 0 6px 20px 0 rgba(0, 0, 0, 0,.19);
+    box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,.19);
 }
 
+.container.photo {
+    width: 300px;
+    height: auto;
+}
