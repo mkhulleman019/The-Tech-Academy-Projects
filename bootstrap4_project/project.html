@@ -70,7 +70,7 @@
 
 <!--COULMN 3-->
               <div class="col-sm">
-                <h3> Specials </h3>
+                <h3> Deals </h3>
                   <ul class="list-group">
                    <li class="list-group-item">
                       <a class="nav-link"> 5 Course Meal</a>
@@ -136,10 +136,124 @@
           </div>
        </div>
     </div>
-
-
-
 <!--END MENU-->
+
+<!--This Weeks Specials (Bootstrap Accordion)-->
+<div id="accordion">
+  <h1>Click below to see this weeks specials.</h1>
+  <div class="card border-info mb-3">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Appetizers
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <strong> Roasted Goat Cheese:</strong> Enjoy locally sourced goat cheese, fire roasted with a basil tomato puree. Served with wood grilled pita tips.
+        <br>
+        <strong> Caramelized Onion and Pear Tarts:</strong> Savor the contrast of caramelized onions and fresh pears. This great pairing is sereved atop a dallop of goat chesse on a delicate and flaky puff pastry. 
+      </div>
+    </div>
+  </div>
+  <div class="card border-info mb-3">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Entrees
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <strong> White Wine Ravioli: </strong> Immerse yourself in our most popular ravioli special! Enjoy light, cheese filled ravioli topped in a white wine butter sauce, topped with asparagus and toasted walnuts.
+        <br>
+        <strong>Pan Seared Scallops</strong> Bringing the freshness of the sea to you with our gorgeous pan seared scallops, served atop a hearty Parmesan Risotto.
+      </div>
+    </div>
+  </div>
+  <div class="card border-info mb-3">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Desserts and Drinks
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <strong> Vanilla Panna Cotta:</strong> Experience heaven in a dessert. Try our creamy Vanilla Panna Cotta topped with a fresh berry coulis. 
+        <br>
+        <strong> The Treaty of Paris:</strong> Feel like you're in Paris with lovely Earl Grey infused cocktail. Made with top-shelf Brandy, Earl Grey tea, lemon juice, egg white, and Champagne.
+        <br>
+        <strong> 1908 Elderflower Sour </strong> Perfect for spring! This refreshing take on a Gin Sour features Empress 1908 Gin, Elderflower Liquer, fresh sqeezed grapefruit juice, and a butterfly pea syrup made freshly in-house. Topped with a light egg white foam.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--End This Weeks Specials-->
+
+<!--JUMBOTRON HEADING-->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+          <div class="container">
+            <h1 class="display-4 hidden-sm-down" style="color:#fff; font-family:roboto; font-weight:900; text-transform:uppercase;">
+            Exclusive Deals</h1>
+            <p class="lead">Check out our exclusive deals...</p>
+            <!--exclusive deals-->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">See Our Exclusive Deals</button>
+            <!--/exclusive deals-->
+          </div>
+        </div>
+<!--/JUMBOTRON HEADING-->
+
+
+<!--Form Modal-->
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Register to Receive BiteMe! Rewards</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+    <!--Modal Form-->
+                <form>
+                  <fieldset class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </fieldset>
+                </form>
+    <!--End Modal Form-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--End Form Modal-->
+
 
 <!--CONTACT-->
         <div id="deals">
@@ -149,7 +263,9 @@
               <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" style="width:50%; margin-left: 25%; margin-right: auto;" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-              <button type="submit" class="btn btn-primary mt-3">Submit</button>
+              <button type="button" class="btn btn-primary mt-3 popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="You've been signed up for our special offers!">
+                Sign Up
+              </button>
             </form>
           </div>  
         </div>        
@@ -172,11 +288,24 @@
                 </li>
             </ul>
           </div>
-              
+<!--END BOTTOM NAV-->     
 
     </div>
 
+<!--jQuery first, then bootstrap js-->
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<!--jQuery-->
+<script>
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
+    })
+
+</script>
 
 
 
