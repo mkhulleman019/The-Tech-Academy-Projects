@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>XML Practice</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <p id="xmlExample"></p>
+
+
+        <script>
+            var xmlParser, xmlDocument;
+
+            //creates a text string//
+            var show = "<show>" +
+                "<title>How I Met Your Mother</title>" +
+                "<character>Marshall Eriksen</character>" +
+                "<actor>Jason Segel</actor>"+
+                "<birthPlace>St Cloud, Minnesota</birthPlace>" +
+                "</show>";
+
+            //creates a DOM Parser//
+            xmlParser = new DOMParser();
+
+            //creates a new XML DOM object using the text string//
+            xmlDocument = xmlParser.parseFromString(show,"text/xml");
+
+            document.getElementById("xmlExample").innerHTML = 
+            xmlDocument.getElementsByTagName("birthPlace")[0].childNodes[0].nodeValue;
+
+        </script>
+    </body>
+
+</html>

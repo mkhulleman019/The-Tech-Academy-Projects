@@ -5,14 +5,28 @@
 		<meta charset=UTF-8>
 	</head>
 	
-	<body>
+	<body style=>
 		<h1> Please fill out the form below: </h1>
-			<form action="" method="get">
-				First Name: <input type="text" name="firstName"><br>
-				Last Name: <input type="text" name="lastName"><br>
-				Email: <input type="email" name="email"><br>
-				Password: <input type="password" name="password"><br>
-				<input type="submit" value="Submit">
+			<form name= "testForm" action="" method="get" onsubmit="return validateForm()" style="width:500px; background-color:dimgray; font-size: 1em; font-weight: bold; padding: 20px;">
+				First Name: <input type="text" name="firstName"style="width:300px; margin-left: 40px; margin-bottom: 5px;"><br>
+				Last Name: <input type="text" name="lastName" style="width:300px; margin-left: 42px; margin-bottom: 5px;"><br>
+				Phone Number: <input type="text" name="phoneNumber" style="width:300px; margin-left: 13px; margin-bottom: 5px;"><br>
+				Email: <input type="email" name="email" style="width:300px; margin-left: 76px; margin-bottom: 5px;"><br>
+				Password: <input type="password" name="password" style="width:300px; margin-left: 51px; margin-bottom: 5px;"><br>
+				<input type="submit" value="Submit" style="margin-left: 45%;">
 			</form>
+
+			<script>
+				function validateForm() {
+					let fn =  document.forms["testForm"]["firstName"].value;
+					let ln = document.forms["testForm"]["lastName"].value;
+					let e = document.forms["testForm"]["email"].value;
+					
+					if (fn === "" || ln === "" || e === "") {
+						alert ("First Name, Last Name, and Email are required");
+						return false;
+					}
+				}
+			</script>
 	</body>
 </html> 

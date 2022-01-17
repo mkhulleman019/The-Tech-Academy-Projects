@@ -2,10 +2,6 @@ html {
     overflow-x: hidden;
 }
 
-body{
-
-}
-
 header {
     margin-bottom: 3em;
 }
@@ -51,7 +47,7 @@ main img{
 
 p{
     text-align: center;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 .textOverlay {
@@ -100,8 +96,7 @@ td {
 
 video {
     position: relative;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin: 3em auto 3em -9em;
     border-radius: 10px;
 }
 
@@ -116,6 +111,17 @@ footer p{
 /*==============================
             ANIMATIONS
 ==============================*/
+
+/*BODY FADE-IN*/
+body{
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
 
 /*NAVBAR Hover*/
 
@@ -191,7 +197,7 @@ footer p{
     position:absolute;
     top: 10.5%;
     bottom: 0;
-    left: 0;
+    left: -9em;
     right: 0;
     height: 360px;
     width: 640px;

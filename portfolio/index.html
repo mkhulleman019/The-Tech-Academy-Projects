@@ -5,9 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="./css/main.css">
+<!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+<!--Hamburger Nav-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -16,16 +20,36 @@
         <header>
 
 <!--NAV BANNER--> 
-            <div class="banner">
+            <div class="banner" id="home">
                 <img src="./images/indexBanner.jpg" alt="Flower Buds in Front of Badlands">
                      <p> MaKayla Hulleman </p>
                      <h1> { hello } </h1>
 <!--NAV ITEMS-->
-                        <nav>
-                            <a href="#aboutMe"> About. </a>
-                            <a href="#myWork"> My Work. </a>
-                            <a href="#contact"> Contact. </a>
-                        </nav>
+                        <div class="topnav">
+                            <nav>
+                                <ul>
+                                    <a href="#home" class="active">Home.</a>
+                            <!--Nav Links - Hidden by default-->
+                                    <div id="myLinks">
+                                        <li>
+                                            <a href="#aboutMe"> About. </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#myWork"> My Work. </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#contact"> Contact. </a>
+                                        </li>
+                                    </div>
+                            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </ul>
+                            </nav>
+                        </div>
 <!--END NAV ITEMS-->
 
 <!--END NAV BANNER-->
@@ -94,12 +118,61 @@
 <!--END MY WORK TEXT-->
 
 
-<!--MY WORK IMG-->
+<!--MY WORK Slideshow-->
+                <!--Img 1-->
                         <div class="column1">
-                            <img src="./images/flowersBAW.png" alt="Black and White Flowers">
+                            <div class="mySlides fade">
+                                <img src="" alt="">
+                                <div class="text"></div>
+                            </div>
                         </div>
 
-<!--END MY WORK IMG-->
+                <!--Img 2-->
+                        <div class="column1">
+                            <div class="mySlides fade">
+                                <img src="" alt="">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+
+                <!--Img 3-->
+                        <div class="column1">
+                            <div class="mySlides fade">
+                                <img src="" alt="">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+
+                <!--Img 4-->
+                        <div class="column1">
+                            <div class="mySlides fade">
+                                <img src="" alt="">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+
+                <!--Img 5-->
+                        <div class="column1">
+                            <div class="mySlides fade">
+                                <img src="" alt="">
+                                <div class="text"></div>
+                            </div>
+                        </div>
+
+        <!--Next and Previous Buttons-->
+                        <a class="prev" onclick="plusSlides(-1)"> &#10094; </a>
+                        <a class="next" onclick="plusSlides(1)"> &#10095; </a>
+
+        <!-- Dots and Circles-->
+                        <div style="text-align: center;">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                        </div>
+
+<!--END MY WORK Slideshow-->
             </section>
 <!--END MY WORK-->
 
@@ -117,23 +190,29 @@
 <!--CONTACT TEXT-->
                             <div class="column2">
                                 <h1> { contact me } </h1>
-                                        <form action="https://formspree.io/f/mgedvawl" method="POST">
+                                <form action="https://formspree.io/f/mgedvawl" method="POST">
 
+                        <!--Form Email-->
+                                    <label>
+                                        Your email:
+                                        <input type="email" name="_replyto" id="email">
+                                    </label>
+                                    <br>
 
-                                        <label>
-                                            Your email:
-                                            <input type="email" name="_replyto">
-                                        </label>
-                                        <br>
-                                        <label>
-                                            Your message:
-                                            <textarea name="message"></textarea>
-                                        </label>
-                                        <div class="formDisclaimer"> <p> Please allow up to 
-                                            48 hours for a response. </p></div>
-                                        <!-- your other form fields go here -->
-                                        <button type="submit">Send</button>
-                                        </form> 
+                        <!--Form Message-->
+                                    <label>
+                                        Your message:
+                                        <textarea name="message" id="message"></textarea>
+                                    </label>
+
+                        <!--Form Disclaimer and Send Button-->
+                                    <div class="formDisclaimer"> 
+                                        <p> Please allow up to 48 hours for a response. </p>
+                                    </div>
+                                    <!-- your other form fields go here -->
+                                    <button type="submit">Send</button>
+                                    </form> 
+                                     
                             </div>
                         </div>
 
@@ -147,3 +226,9 @@
             <p> MaKayla Hulleman | MHulleman Designs | 2021 </p>
         </footer>
 <!--END FOOTER-->
+
+<!--JAVASCRIPT-->
+        <script src="./js/script.js"></script>
+
+
+    </body>

@@ -4,10 +4,17 @@
         <title> TTA Challenges </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./css/challengesCSS.css">
+
+
     </head>
 
 <!--BODY-->
     <body>
+
+<!-- FADE IN JS-->
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
 
 <!--NAV-->
         <header>
@@ -105,6 +112,13 @@
             <p> MHulleman Designs &copy;2021 </p>
         </footer>
 <!--END FOOTER-->
+
+<!--REMOVE BODY FADE OUT JS-->
+        <script>
+            window.addEventListener("DOMContentLoaded", () => (
+                document.body.classList.remove('fade-out')
+            ));
+        </script>
 
     </body>
 <!--END BODY-->

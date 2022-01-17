@@ -1,0 +1,121 @@
+/* Button used to open form, locaetd at top of the page*/
+.openForm {
+    background-color: dimgray;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: sticky;
+    top: 150px;
+    left: 42%;
+    width: 300px;
+}
+
+h1 {
+    top: 40px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-top: 70px
+}
+
+/*Popup form, hidden by default*/
+.popupForm {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+
+.formContainer {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid #f1f1f1;
+}
+
+.formContainer input[type=text], .formContainer input[type=email] {
+    width: 90%;
+    padding: 15px;
+    margin:5px 0 22px 0;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+/*When the inputs get focus, do something*/
+.formContainer input[type=text]:focus, .formContainer input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.formContainer .btn {
+    background-color: #04aa6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.formContainer .cancel {
+    background-color: red;
+}
+
+.formContainer .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+
+/*Aniamtes form to move from bottom right, up and left 300px*/
+
+.formContainer{
+    position: relative;
+    animation: moveContent 5s forwards;
+    -webkit-animation-iteration-count: 1;
+}
+
+@keyframes moveContent {
+    from{bottom: 0px;right:0px}
+    to{bottom: 300px; right: 300px;}
+    bottom: 300px;
+    right: 300px;
+    
+}
+
+/* Zoom function on img*/
+
+img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    left:42%;
+
+}
+
+img:hover {
+    cursor: pointer;
+    animation: zoominoutsinglefeatured 3s forwards;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100%{
+        transform: scale(2, 2);
+    }
+}
+
+
