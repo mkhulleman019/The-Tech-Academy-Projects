@@ -16,18 +16,6 @@ body{
     overflow-x: hidden;
 }
 
-header{
-    background-image: url(images/blackhillsBanner_001.jpg);
-    background-size: cover
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    border-bottom: medium black 1em;
-    border-bottom-style: solid;
-}
-
-
-
 h1 {
     font-size: 2em;
     text-align:center;
@@ -48,15 +36,18 @@ p {
 
 .column1{
     width: 90%;
-    margin: 1em;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .column2{
     width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .column2 h1 {
-    margin-top: 1.5em;;
+    margin-top: 1.5em;
 }
 
 /*========================
@@ -169,6 +160,46 @@ ul li {
     width: 3em;
     height: 3em;
 }
+/*===================================
+           MY WORK CSS
+===================================*/
+#myWork{
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+/*===================================
+          CONTACT FORM CSS
+===================================*/
+form {
+    width: 90%;
+    cursor: pointer;
+}
+
+form input[type="email"] {
+    width: 90%;
+    height: 2em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+}
+
+form textarea {
+    width: 90%;
+    height: 140px;
+    margin-bottom: 0;
+}
+
+.formDisclaimer p{
+    font-size: .75em;
+    margin-bottom: 2em;
+}
+
+form button{
+    width: 20%;
+    height: auto;
+}
 
 
 }
@@ -177,18 +208,7 @@ ul li {
 ===========================================================================================*/
 
 @media only screen and (min-width: 767px){
-    
-    header{
-        margin: 0;
-        height: 20em;
-        background-image: url(images/blackhillsBanner_001.jpg);
-        background-size: cover
-        background-position: center;
-        background-repeat: no-repeat;
-        color: white;
-        border-bottom: medium black 1em;
-        border-bottom-style: solid;
-    }
+
     
     header h1{
         font-family: 'century gothic', sans-serif;
@@ -351,37 +371,6 @@ nav a:hover{
     color: ivory;
 }
 
-
-/*===================================
-          CONTACT FORM CSS
-===================================*/
-form {
-    width: 90%;
-    cursor: pointer;
-}
-
-form input[type="email"] {
-    width: 90%;
-    height: 2em;
-    margin-bottom: 2em;
-    margin-right: 1em;
-}
-
-form textarea {
-    width: 90%;
-    height: 140px;
-    margin-bottom: 0;
-}
-
-.formDisclaimer p{
-    font-size: .75em;
-    margin-bottom: 2em;
-}
-
-form button{
-    width: 20%;
-    height: auto;
-}
 /*===================================
            ABOUT ME CSS
 ===================================*/
