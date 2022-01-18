@@ -23,7 +23,7 @@
             <div class="banner" id="home">
                 <img src="./images/indexBanner.jpg" alt="Dried Flowers in Front of Badlands">
                     <p> MaKayla Hulleman </p>
-                     <h1> { hello } </h1>
+                     <h1 id="typewriter"></h1>
 <!--NAV ITEMS-->
                         <div class="topnav">
                             <nav>
@@ -79,7 +79,7 @@
                     <div class="pinkBG">
 <!--ABOUT ME TEXT-->
                         <div class="column2">
-                            <h1> { about me } </h1>
+                            <h1>{ about me }</h1>
                                 <p>  Hi! My name is MaKayla. I am a web developer, 
                                     a proud wife, and a mother of two. My family and 
                                     I recently packed everything up and moved from 
@@ -173,13 +173,14 @@
 
         <!-- Dots and Circles-->
                         <div style="text-align: center;">
-                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" id="dot1" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
                             <span class="dot" onclick="currentSlide(5)"></span>
                             <span class="dot" onclick="currentSlide(6)"></span>
                             <span class="dot" onclick="currentSlide(7)"></span>
+                            <span class="dot" onclick="currentSlide(8)"></span>
                         </div>
 
 <!--END MY WORK Slideshow-->
@@ -240,6 +241,18 @@
 
 <!--JAVASCRIPT-->
         <script src="./js/script.js"></script>
+
+<!--Typewriter JS-->
+<script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+
+        <script>
+            new TypeIt("#typewriter", {
+                strings: "{ hello }",
+                speed: 75,
+                loop: false,
+                }).go(); 
+        </script> 
+
 
 
     </body>

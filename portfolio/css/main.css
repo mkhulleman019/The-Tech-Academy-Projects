@@ -83,12 +83,19 @@ p {
 /* Style navigation menu links */
 
 #topnav a {
-    color: white;
+    color: ivory;
     text-decoration: none;
     display: inline-block;
     font-size: 1.5em;
     font-weight: bold;
     padding: .1em;
+}
+
+#myLinks a{
+    text-decoration: none;
+    color: ivory;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* Style the hamburger menu */
@@ -100,7 +107,7 @@ p {
 
 .topnav a.icon {
     z-index:500;
-    color: white;
+    color: ivory;
     display: inline-block;
     position: absolute;
     right: 0;
@@ -137,7 +144,6 @@ a .active {
 .banner h1{
     z-index: 100;
     position: relative;
-    top: .25em;
     left: .25em;
     bottom: 0;
     right: 0;
@@ -145,6 +151,10 @@ a .active {
     color: ivory;
     text-align: center;
     height: auto;
+}
+
+header h1{
+    margin-top: .2em
 }
 
 .banner img{
@@ -181,6 +191,11 @@ header p{
     margin-top: 280px;
 }
 
+#aboutMe img{
+    margin-left: -15%;
+    margin-top: -20%;
+}
+
 
 /*===================================
            MY WORK CSS
@@ -197,6 +212,99 @@ header p{
 }
 
 
+/*=================================
+            Slideshow CSS
+=================================*/
+
+#myWork .slideshowContainer, #myWork img{
+    z-index: 1;
+    position: relative;
+    width: 320px;
+    height: auto;
+    margin: 1em auto 0 -15%;
+}
+
+.mySlides {
+    display: none;
+} 
+
+.slideshowContainer img{
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    z-index: 3; 
+    margin-top: -3em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev{
+    margin-left: -3em;
+    margin-right: 300px;
+
+}
+
+.text{
+    z-index: 1;
+    width: 350px;
+    text-align: center;
+    background-color: #fadbdd47;
+    color: black;
+    height: 30px;
+    padding-top: 14px;
+    margin-left: -4em;
+    margin-bottom: -2em;
+    
+}
+
+/* Dots/Bullets/Indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 1em 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#dot1{
+    margin-left:-7em;
+}
+
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+/* Fading Animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
 /*===================================
            Contact CSS
 ===================================*/
@@ -206,14 +314,21 @@ header p{
 
 #contact .column2 {
     margin-top: 180px;
+    margin-left: 2em;
+}
+#contact h1 {
+    margin-left:-2em;
 }
 
+#contact img{
+    margin-left:-12%
+}
 #contact .pinkBG {
     z-index: -100;
     background-color: #fadbdd;
     height: 560px;
     width: 100%;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top:-200px;
     padding: .5em;
 }
@@ -298,6 +413,7 @@ p{
 
 #aboutMe img{
     margin-left: 15%;
+    margin-top: 2%
 }
 
 #aboutMe .column2 {
@@ -308,6 +424,36 @@ p{
 /*=================================
             MY WORK CSS
 =================================*/
+#myWork .column2 {
+    width: 85%;
+    margin-left: 5%;
+}
+
+
+/*=================================
+            Slideshow CSS
+=================================*/
+#myWork img {
+    width: 432px;
+    height: auto;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.text {
+    margin-left: 1em;
+    width: 432px;
+}
+
+.prev{
+    margin-left: 1.2em;
+    margin-right: 405px;
+}
+
+#dot1{
+    margin-left:-22em;
+}
+
 
 
 
@@ -316,12 +462,9 @@ p{
 /*=================================
             Contact CSS
 =================================*/
-#contact img{
-    margin-left: 15%;
-}
 
-#contact h1{
-    margin-left: 5%;
+#contact .column2 h1{
+    margin-left: -1em;
 }
 
 #contact .pinkBG {
@@ -372,7 +515,7 @@ body{
     width:30%;
     float: left;
     margin-left:0;
-    margin-right: 15%;
+    margin-right:15%;
 
 }
 
@@ -600,6 +743,10 @@ a .active {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+#dot1{
+    margin-left:-22em;
+}
+
 
 .active, .dot:hover{
     background-color: #717171;
@@ -1225,6 +1372,7 @@ a .active {
 
 #myWork .column2 {
     margin-left: 5%;
+    width: 30%;
 }
 
 #myWork #slideshowContainer {
@@ -1259,11 +1407,11 @@ a .active {
     cursor: pointer;
     position: relative;
     z-index: 3;
-    top: -12em;
+    top: -10em;
     width: auto;
     margin-top: 0;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -1273,7 +1421,8 @@ a .active {
 
 /* Position "next" button to the right */
 .next {
-    left: 340px;
+    left: 400px;
+    top: -10.85em;
     border-radius: 3px 0 0 3px;
 }
 
@@ -1301,11 +1450,15 @@ a .active {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 1em 2px;
+    margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+#dot1 {
+    margin-left: 0;
 }
 
 .active, .dot:hover{
