@@ -2,835 +2,7 @@
             RESPONSIVE SCREEN CSS - MOBILE
 ===========================================================================================*/
 /*========================================
-               General CSS
-========================================*/
-
-html {
-    overflow-x: hidden;
-    width:100%;
-    scroll-behavior: smooth;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body{
-    font-family: 'Questrial', sans-serif;
-    width: 100%;
-    position: relative;
-    overflow-x: hidden;
-}
-
-h1 {
-    font-size: 2em;
-    text-align:center;
-}
-
-p {
-    font-size: 1em;
-}
-
-.pinkBG {
-    z-index: -100;
-    background-color: #fadbdd;
-    height: 550px;
-    width: 100%;
-    margin-left: 5%;
-    margin-top:-300px;
-    padding: .5em;
-}
-
-.column1{
-    width: 90%;
-    margin-right: 15%;
-    margin-left: 0;
-}
-
-.column2{
-    width: 90%;
-    margin-right: 15%;
-    margin-left: 0;
-}
-
-.column2 h1 {
-    margin-top: 1.5em;
-    margin-left: -5%;
-}
-
-/*========================
-    HAMBURGER NAV
-========================*/
-
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 1em;
-    width: 200px;
-    height: 300px;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-    display: none;
-    text-align: right;
-    position: absolute;
-    top: 2em;
-    right: 0;
-}
-
-/* Style navigation menu links */
-
-#topnav a {
-    color: ivory;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: .1em;
-}
-
-#myLinks a{
-    text-decoration: none;
-    color: ivory;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-/* Style the hamburger menu */
-.icon {
-    position: absolute;
-    top:0;
-    right: 0;
-}
-
-.topnav a.icon {
-    z-index:500;
-    color: ivory;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: .5em;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-    background-color: #fadbdd;
-    color: black;
-}
-
-ul li {
-    display: block;
-}
-
-a .active {
-    background:none;
-}
-
-
-/*========================================
-                  Header
-========================================*/
-.banner {
-    width: 100%;
-    height:20em;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.banner h1{
-    z-index: 100;
-    position: relative;
-    left: .25em;
-    bottom: 0;
-    right: 0;
-    font-size: 3em;
-    color: ivory;
-    text-align: center;
-    height: auto;
-}
-
-header h1{
-    margin-top: .2em
-}
-
-.banner img{
-    position: relative;
-    width: 100%;
-    top: 0;
-    left:0; 
-    margin-bottom: -1.7em;
-}
-
-.logo img{
-    z-index: 500;
-    margin-top:0;
-    margin-left: 45%;
-    margin-right: auto;
-    width: 3em;
-    height: 3em;
-}
-
-header p{
-    display: none;
-}
-
-
-/*===================================
-           About Me CSS
-===================================*/
-#aboutMe {
-    margin-right: 5%;
-    margin-top: -35%;
-}
-
-#aboutMe .column2 {
-    margin-top: 280px;
-}
-
-#aboutMe img{
-    margin-left: -15%;
-    margin-top: -20%;
-}
-
-
-/*===================================
-           MY WORK CSS
-===================================*/
-#myWork{
-    width: 100%;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-#myWork a{
-    color: black;
-    font-weight: bold;
-}
-
-
-/*=================================
-            Slideshow CSS
-=================================*/
-
-#myWork .slideshowContainer, #myWork img{
-    z-index: 1;
-    position: relative;
-    width: 320px;
-    height: auto;
-    margin: 1em auto 0 -15%;
-}
-
-.mySlides {
-    display: none;
-} 
-
-.slideshowContainer img{
-    vertical-align: middle;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: relative;
-    z-index: 3; 
-    margin-top: -3em;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.prev{
-    margin-left: -3em;
-    margin-right: 300px;
-
-}
-
-.text{
-    z-index: 1;
-    width: 350px;
-    text-align: center;
-    background-color: #fadbdd47;
-    color: black;
-    height: 30px;
-    padding-top: 14px;
-    margin-left: -4em;
-    margin-bottom: -2em;
-    
-}
-
-/* Dots/Bullets/Indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 1em 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-#dot1{
-    margin-left:-7em;
-}
-
-
-.active, .dot:hover{
-    background-color: #717171;
-}
-
-/* Fading Animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-
-/*===================================
-           Contact CSS
-===================================*/
-#contact {
-    margin-right: 5%;
-}
-
-#contact .column2 {
-    margin-top: 180px;
-    margin-left: 2em;
-}
-#contact h1 {
-    margin-left:-2em;
-}
-
-#contact img{
-    margin-left:-12%
-}
-#contact .pinkBG {
-    z-index: -100;
-    background-color: #fadbdd;
-    height: 560px;
-    width: 100%;
-    margin-left: 3%;
-    margin-top:-200px;
-    padding: .5em;
-}
-/*===================================
-          CONTACT FORM CSS
-===================================*/
-form {
-    width: 90%;
-    cursor: pointer;
-}
-
-form input[type="email"] {
-    width: 90%;
-    height: 2em;
-    margin-bottom: 2em;
-    margin-right: 1em;
-}
-
-form textarea {
-    width: 90%;
-    height: 140px;
-    margin-bottom: 0;
-}
-
-.formDisclaimer p{
-    font-size: .75em;
-    margin-bottom: 2em;
-}
-
-form button{
-    width: 20%;
-    height: auto;
-}
-
-/*=====================================
-                FOOTER
-=====================================*/
-footer {
-    text-align: center;
-}
-
-/*==========================================================================================
-            RESPONSIVE SCREEN CSS - TABLET
-===========================================================================================*/
-
-@media only screen and (min-width: 767px){
-
-h1{
-    font-size: 4em;
-}
-
-p{
-    font-size: 1.5em
-}
-
-.pinkBG {
-    height: 700px
-}
-/*============================
-        HEADER CSS 
-============================*/
-.banner h1{
-    font-size: 4em;
-    margin-top: 1em;
-}
-
-
-.logo img {
-    width: 5em;
-    height: 5em;
-    margin-top: -2%;
-}
-    
-
-/*=================================
-            ABOUT ME CSS
-=================================*/
-#aboutMe {
-    margin-right: 5%;
-    margin-top: -5em;
-}
-
-#aboutMe img{
-    margin-left: 15%;
-    margin-top: 2%
-}
-
-#aboutMe .column2 {
-    margin-left: 5%;
-}
-
-
-/*=================================
-            MY WORK CSS
-=================================*/
-#myWork .column2 {
-    width: 85%;
-    margin-left: 5%;
-}
-
-
-/*=================================
-            Slideshow CSS
-=================================*/
-#myWork img {
-    width: 432px;
-    height: auto;
-    margin-left: 1em;
-    margin-top: 2em;
-}
-
-.text {
-    margin-left: 1em;
-    width: 432px;
-}
-
-.prev{
-    margin-left: 1.2em;
-    margin-right: 405px;
-}
-
-#dot1{
-    margin-left:-22em;
-}
-
-
-
-
-
-
-/*=================================
-            Contact CSS
-=================================*/
-
-#contact .column2 h1{
-    margin-left: -1em;
-}
-
-#contact .pinkBG {
-    height: 700px
-}
-
-/*=================================
-          CONTACT FORM CSS
-=================================*/
-form {
-   margin-left: 10%;
-}
-
-
-/* Closing brace for media screen*/
-}
-/*==========================================================================================
-            RESPONSIVE SCREEN CSS - FULL SIZE
-===========================================================================================*/
-    @media only screen and (min-width: 1150px){
-/*===================================
-            GENERAL CSS
-===================================*/
-html {
-    overflow-x: hidden;
-    width:100%;
-    scroll-behavior: smooth;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body{
-    font-family: 'Questrial', sans-serif;
-    width: 100%;
-    position: relative;
-}
-.column1{
-    z-index: 100;
-    width: 40%;
-    float: left;
-    margin-left: 10%;
-    margin-right: 2%;
-
-}
-
-.column2{
-    z-index: 1000;
-    width:30%;
-    float: left;
-    margin-left:0;
-    margin-right:15%;
-
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row {
-    margin-right: 5%;
-    margin-left: 5%;
-    padding: 0;
-}
-
-h1 {
-    font-size: 4em;
-}
-
-p {
-    font-size: 1.5em;
-}
-
-.pinkBG {
-    z-index: -100;
-    background-color: #fadbdd;
-    height: 500px;
-    width: 100%;
-    margin-left: 5%;
-}
-
-/*===================================
-             HEADER CSS
-===================================*/
-header p{
-    z-index: 100;
-    display: contents;
-    color: ivory;
-    font-size: 2em;
-    top: 0;
-    left: 0;
-}
-
-.banner {
-    width: 105%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 1em;
-}
-
-.banner h1{
-    z-index: 100;
-    position: relative;
-    top:0;
-    left: -.5em;
-    font-size: 6em;
-    color: ivory;
-    text-align: center;
-}
-
-.banner img{
-    position: absolute;
-    z-index: -1; 
-    width: 105%;
-    top: -1em;
-    left: -1em;
-    right:-1em;
-}
-
-.logo img{
-    z-index: 500;
-    margin-top: 18em;
-    margin-left: 45%;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
-}
-
-/*========================
-            NAV
-========================*/
-
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    position: absolute;
-    display: inline;
-    top: 0;
-    right: 0;
-    width: 40%;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-    display: inline;
-    text-align: right;
-    position: relative;
-    top: 0;
-    right: 0;
-}
-
-/* Style navigation menu links */
-
-#myLinks a {
-    text-decoration:none;
-    color: ivory;
-    display: inline;
-    font-size: 1.5em;
-    padding: 0 1em;
-
-}
-
-/* Remove Hamburger Nav*/
-
-.topnav a.icon {
-    display: none;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-    background-color: #fadbdd;
-    color: black;
-}
-
-ul li {
-    display: inline;
-}
-
-a .active {
-    background:none;
-}
-
-/*===================================
-           ABOUT ME CSS
-===================================*/
-#aboutMe{
-    height: 30%;
-    width: 100%;
-    margin-left:5%;
-    margin-right: 15%;
-    padding: 0%;
-}
-
-
-/*===================================
-           MY WORK CSS
-===================================*/
-#myWork{
-    height: 30%;
-    width: 100%;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-#myWork .column2 {
-    margin-left: 5%;
-}
-
-
-/*===================================
-        MY WORK SLIDESHOW CSS
-===================================*/
-/* Slideshow Container */
-.slideshowContainer {
-    max-width: 400px;
-    position: relative;
-    margin: 40px auto auto auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-} 
-
-/* Next & Previous Buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position "next" button to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On Hover, add black background -slightly transparent */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption Text */
-.text {
-    color: #f2f2f2;
-    background-color: #9b928dc2;
-    height: 30px;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Dots/Bullets/Indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-#dot1{
-    margin-left:-22em;
-}
-
-
-.active, .dot:hover{
-    background-color: #717171;
-}
-
-/* Fading Animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-
-
-/*===================================
-            CONTACT CSS
-===================================*/
-#contact .column2{
-    width: 45%;
-    margin-right: -5%;
-    margin-left: -5%;
-}
-
-#contact{
-    height: 30%;
-    width: 100%;
-}
-
-/*===================================
-          CONTACT FORM CSS
-===================================*/
-form {
-    width: 90%;
-    cursor: pointer;
-}
-
-form input[type="email"] {
-    width: 90%;
-    height: 2em;
-    margin-bottom: 2em;
-    margin-right: 1em;
-}
-
-form textarea {
-    width: 90%;
-    height: 140px;
-    margin-bottom: 0;
-}
-
-.formDisclaimer p{
-    font-size: .75em;
-    margin-bottom: 2em;
-}
-
-form button{
-    width: 20%;
-    height: auto;
-}
-
-/*===================================
-            FOOTER CSS
-===================================*/
-footer p {
-    font-size: 1em;
-    text-align: left;
-}
-
-/* Closing brace for media screen*/
-}/*==========================================================================================
-            RESPONSIVE SCREEN CSS - MOBILE
-===========================================================================================*/
-/*========================================
-               General CSS
+            General CSS Mobile
 ========================================*/
 
 html {
@@ -870,7 +42,7 @@ p {
 .column1{
     width: 90%;
     margin-right: 0;
-    margin-left: 15%;
+    margin-left: 1%;
 }
 
 .column2{
@@ -885,14 +57,14 @@ p {
 }
 
 /*========================
-    HAMBURGER NAV
+   HAMBURGER NAV Mobile
 ========================*/
 
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
     position: absolute;
-    display: inline-block;
+    display: block;
     top: 0;
     right: 1em;
     width: 200px;
@@ -904,17 +76,19 @@ p {
     display: none;
     text-align: right;
     position: absolute;
+    text-decoration: none;
+    color:ivory;
     top: 2em;
     right: 0;
 }
 
 /* Style navigation menu links */
 
-#topnav a {
-    color: white;
+.topnav a{
+    color: ivory;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1.5em;
+    display: block;
+    font-size: 1em;
     font-weight: bold;
     padding: .1em;
 }
@@ -928,8 +102,8 @@ p {
 
 .topnav a.icon {
     z-index:500;
-    color: white;
-    display: inline-block;
+    color: ivory;
+    display: block;
     position: absolute;
     right: 0;
     top: .5em;
@@ -945,13 +119,13 @@ ul li {
     display: block;
 }
 
-a .active {
+a.active {
     background:none;
 }
 
 
 /*========================================
-                  Header
+            Header Mobile
 ========================================*/
 .banner {
     width: 100%;
@@ -965,7 +139,7 @@ a .active {
 .banner h1{
     z-index: 100;
     position: absolute;
-    top: .25em;
+    top: -.1em;
     left: .25em;
     bottom: 0;
     right: 0;
@@ -998,11 +172,11 @@ header p{
 
 
 /*===================================
-           About Me CSS
+        About Me CSS Mobile
 ===================================*/
 #aboutMe {
     margin-right: 5%;
-    margin-top: -35%;
+    margin-top: -55%;
 }
 
 #aboutMe .column2 {
@@ -1011,7 +185,7 @@ header p{
 
 
 /*===================================
-           MY WORK CSS
+        MY WORK CSS Mobile
 ===================================*/
 #myWork{
     width: 100%;
@@ -1024,16 +198,104 @@ header p{
     font-weight: bold;
 }
 
+/*=================================
+            Slideshow CSS
+=================================*/
+
+#myWork .slideshowContainer, #myWork img{
+    z-index: 1;
+    position: relative;
+    width: 320px;
+    height: auto;
+    margin: 1em auto 0 0;
+}
+
+.mySlides {
+    display: none;
+} 
+
+.slideshowContainer img{
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    z-index: 3; 
+    margin-top: -3em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev{
+    margin-left: .5em;
+    margin-right: 280px;
+
+}
+
+.text{
+    z-index: 1;
+    width: 320px;
+    text-align: center;
+    background-color: #fadbdd47;
+    color: black;
+    height: 30px;
+    padding-top: 14px;
+    margin-left: 0;
+    margin-bottom: -2em;
+    
+}
+
+/* Dots/Bullets/Indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 1em 2px ;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+/* Fading Animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
 
 /*===================================
-           Contact CSS
+        Contact CSS Mobile
 ===================================*/
-#contact {
-    margin-right: 5%;
-}
 
 #contact .column2 {
     margin-top: 180px;
+}
+
+#contact img{
+    margin-left: 1em;
+    margin-top: -4em;
 }
 
 #contact .pinkBG {
@@ -1046,18 +308,18 @@ header p{
     padding: .5em;
 }
 /*===================================
-          CONTACT FORM CSS
+        CONTACT FORM CSS Mobile
 ===================================*/
 form {
     width: 90%;
     cursor: pointer;
+    margin-left: 1.5em
 }
 
 form input[type="email"] {
     width: 90%;
     height: 2em;
     margin-bottom: 2em;
-    margin-right: 1em;
 }
 
 form textarea {
@@ -1069,15 +331,19 @@ form textarea {
 .formDisclaimer p{
     font-size: .75em;
     margin-bottom: 2em;
+    text-align: center;
+    margin-left:-1.5em;
 }
 
 form button{
     width: 20%;
     height: auto;
+    margin-left: 8em;
+    margin-right: auto;
 }
 
 /*=====================================
-                FOOTER
+            FOOTER Mobile
 =====================================*/
 footer {
     text-align: center;
@@ -1097,15 +363,20 @@ p{
     font-size: 1.5em
 }
 
+.column1{ 
+    margin-left: 17%;
+}
+
 .pinkBG {
-    height: 700px
+    height: 640px
 }
 /*============================
-        HEADER CSS 
+       HEADER CSS Tablet
 ============================*/
 .banner h1{
-    font-size: 4em;
+    font-size: 5em;
     margin-top: 1em;
+    margin-left: -.25em;
 }
 
 
@@ -1114,10 +385,23 @@ p{
     height: 5em;
     margin-top: -2%;
 }
-    
+ 
+/*=================================
+            Nav CSS Tablet
+=================================*/   
+.topnav{
+    margin-right: 2em;
+}
+.topnav a{
+    font-size: 2em;
+}
+
+#myLinks{
+    margin-top: 2em;
+}
 
 /*=================================
-            ABOUT ME CSS
+        ABOUT ME CSS Tablet
 =================================*/
 #aboutMe {
     margin-right: 5%;
@@ -1134,15 +418,59 @@ p{
 
 
 /*=================================
-            MY WORK CSS
+        MY WORK CSS Tablet
 =================================*/
+#myWork{
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
 
-
-
+#myWork h1{
+    margin-left: 2px;
+}
+#myWork .column2{
+    margin-top: -3em;
+}
 
 
 /*=================================
-            Contact CSS
+       Slideshow CSS Tablet
+=================================*/
+
+#myWork .slideshowContainer, #myWork img{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 1em auto 0 -20%;
+}
+
+.text{
+    font-size: 1.5em;
+    width: 100%;
+    margin-left: -20%;
+    margin-bottom: -1.5em;
+}
+
+.prev {
+    margin-left:-17%;
+    margin-right: 90%;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    margin: 2em .25em;
+}
+
+#dot1{
+    margin-left: -40%;
+}
+
+
+/*=================================
+        Contact CSS Tablet
 =================================*/
 #contact img{
     margin-left: 15%;
@@ -1157,11 +485,28 @@ p{
 }
 
 /*=================================
-          CONTACT FORM CSS
+      CONTACT FORM CSS Tablet
 =================================*/
 form {
    margin-left: 10%;
 }
+
+#contact form{
+    font-size: 1.5em
+}
+
+#contact p {
+    text-align: left;
+    margin-left: 0;
+}
+
+form button{
+    width: 10em;
+    height: 2em;
+    font-size: .75em;
+    margin-left: 0;
+}
+
 
 
 /* Closing brace for media screen*/
@@ -1171,7 +516,7 @@ form {
 ===========================================================================================*/
     @media only screen and (min-width: 1150px){
 /*===================================
-            GENERAL CSS
+        GENERAL CSS Fullscreen
 ===================================*/
 html {
     overflow-x: hidden;
@@ -1241,7 +586,7 @@ p {
 }
 
 /*===================================
-             HEADER CSS
+        HEADER CSS Fullscreen
 ===================================*/
 header p{
     z-index: 100;
@@ -1265,7 +610,7 @@ header p{
     z-index: 100;
     position: relative;
     top:0;
-    left: -.5em;
+    left: -.6em;
     font-size: 6em;
     color: ivory;
     text-align: center;
@@ -1290,7 +635,7 @@ header p{
 }
 
 /*========================
-            NAV
+        NAV Fullscreen
 ========================*/
 
 /* Style the navigation menu */
@@ -1299,7 +644,8 @@ header p{
     position: absolute;
     display: inline;
     top: 0;
-    right: 0;
+    font-size: 1.1em;
+    right: -3em;
     width: 40%;
 }
 
@@ -1319,7 +665,7 @@ header p{
     color: ivory;
     display: inline;
     font-size: 1.5em;
-    padding: 0 1em;
+    padding: 0 .75em;
 
 }
 
@@ -1344,7 +690,7 @@ a .active {
 }
 
 /*===================================
-           ABOUT ME CSS
+        ABOUT ME CSS Fullscreen
 ===================================*/
 #aboutMe{
     height: 30%;
@@ -1360,14 +706,18 @@ a .active {
 
 
 /*===================================
-           MY WORK CSS
+        MY WORK CSS Fullscreen
 ===================================*/
 #myWork{
     height: 30%;
     width: 100%;
     margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 18em;
+    margin-left: 7%;
+    margin-top: 22em;
+}
+
+#myWork h1{
+    margin-left: -.8em;
 }
 
 #myWork .column2 {
@@ -1376,14 +726,14 @@ a .active {
 }
 
 #myWork #slideshowContainer {
-    margin-top: -13em;
+    margin-top: -15em;
     margin-left: 7em;
     position: relative;
 }
 
 
 /*===================================
-        MY WORK SLIDESHOW CSS
+   MY WORK SLIDESHOW CSS Fullscreen
 ===================================*/
 /* Slideshow Container */
 .slideshowContainer {
@@ -1407,7 +757,7 @@ a .active {
     cursor: pointer;
     position: relative;
     z-index: 3;
-    top: -10em;
+    top: -11em;
     width: auto;
     margin-top: 0;
     padding: 16px;
@@ -1421,9 +771,13 @@ a .active {
 
 /* Position "next" button to the right */
 .next {
-    left: 400px;
-    top: -10.85em;
+    left: 0;
+    top: -10.7em;
     border-radius: 3px 0 0 3px;
+}
+
+.prev{
+    margin-right: 75%;
 }
 
 /* On Hover, add black background -slightly transparent */
@@ -1437,12 +791,13 @@ a .active {
     background-color: #fadbdd47;
     height: 30px;
     font-size: 15px;
-    padding: 8px 12px;
+    padding: 18px 12px 0 12px;
     position: relative;
     bottom: 8px;
-    width:409px;
+    width:95%;
     text-align: center;
     margin-top: 0;
+    vertical-align: middle;
 }
 
 /* Dots/Bullets/Indicators */
@@ -1457,9 +812,7 @@ a .active {
     transition: background-color 0.6s ease;
 }
 
-#dot1 {
-    margin-left: 0;
-}
+
 
 .active, .dot:hover{
     background-color: #717171;
@@ -1486,7 +839,7 @@ a .active {
 
 
 /*===================================
-            CONTACT CSS
+        CONTACT CSS Fullscreen
 ===================================*/
 #contact .pinkBG {
     margin-top:5em;
@@ -1510,7 +863,7 @@ a .active {
 }
 
 /*===================================
-          CONTACT FORM CSS
+     CONTACT FORM CSS Fullscreen
 ===================================*/
 form {
     width: 90%;
@@ -1520,19 +873,19 @@ form {
 form input[type="email"] {
     width: 90%;
     height: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     margin-right: 1em;
 }
 
 form textarea {
     width: 90%;
     height: 140px;
-    margin-bottom: 0;
+
 }
 
 .formDisclaimer p{
     font-size: .75em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 form button{
@@ -1541,13 +894,14 @@ form button{
 }
 
 /*===================================
-            FOOTER CSS
+      FOOTER CSS Fullscreen
 ===================================*/
 footer p {
     font-size: 1em;
     text-align: left;
     bottom: 0;
     padding: 0;
+    margin-left: 5em;
 }
 
 /* Closing brace for media screen*/
