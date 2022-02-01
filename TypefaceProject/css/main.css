@@ -1,0 +1,102 @@
+html{
+    background-color: white;
+    overflow-x: hidden;
+    width: 80%;
+    margin-left: auto;
+    margin:auto
+}
+
+body{
+    border-left: .5px solid lightgray;
+    border-right: .5px solid lightgray;
+    color: black;
+}
+
+h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2em;
+}
+
+p{ 
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1em; 
+    margin: 1em;
+}
+
+header {
+    background-color: #A0E0E4;
+    height: 4.5em;
+    width: 100%;
+    margin: -1.7em 0;
+    padding-top:.75em;
+    text-align: center;
+}
+
+main{
+    width: 70%;
+    margin-left: 16%;
+    margin-right: auto;
+}
+
+main h1{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+main p{
+    text-align: center;
+}
+
+img{
+    margin-left: 2.5em;
+    margin-top: -2em;
+}
+
+#imgBG{
+    width: 68.5%;
+    height: 200px;
+    background-color: #FCC0C5;
+    margin: 4em 6.8em;
+}
+
+#formContainer{
+    margin: 6em auto 2em auto;
+    width: 400px;
+    height: auto;
+    background-color: #f582A8;
+
+}
+
+#formContainer h1{
+    padding-top: 1em;
+}
+
+form{
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+}
+
+form input{
+    width: 75%;
+    margin-bottom: 1em;
+}
+
+form label{
+    text-align: left;
+    margin: .5em;
+}
+
+button{
+    margin-left: 150px;
+}
+
+footer{
+    bottom:2em;
+    margin: 2em;
+    text-align: center;
+    font-size: .75em;
+}
+
+
