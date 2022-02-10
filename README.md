@@ -34,6 +34,8 @@ gitBash: these files were all created utilizing the Git Bash terminal
 
 javascriptProjects : this folder contains the practices and assignments from the Javascript Course
 
+UI-UX: This folder contains projects completed in the UI/UX course. Bliss Bakery features the use of HTML, Bootstrap 4, and CSS. 
+
 
 
 
