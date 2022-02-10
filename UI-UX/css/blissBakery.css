@@ -1,0 +1,137 @@
+
+/*===============================
+        General Styling
+===============================*/
+html{
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+
+}
+
+body{
+    max-width: 1600px;
+    background-color:rgb(255 255 255 / 84%);
+}
+
+h1, h2, h3{
+    font-size: 2.5em;
+    font-family: 'Glass Antiqua', cursive;
+    color: black;
+}
+
+p{
+    font-family: 'Advent Pro', sans-serif;
+    color: black;
+    font-size: 1.25em;
+}
+
+main{
+    margin-top: 4em;
+}
+
+.col-5{
+    float: left;
+    margin-right: 10em;
+}
+
+.col{
+    float: left;
+    margin-top: -.5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+/*==========================
+            Nav
+===========================*/   
+
+#bakeryNav{
+    background-image: url("../images/navImage.jpg");
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+    padding: 0;
+    z-index: 0;
+}
+
+#bakeryNav h1{
+    color: #e56997;
+    font-size: 4.5em;
+    padding-top: .5em;
+    margin-left: .75em;
+    text-shadow: 1px 1px #808080b8;
+}
+
+#bakeryNav ul {
+    font-size: 1.5em;
+    position:absolute;
+    top: -6em;
+    right: 1em;
+     text-shadow: .5px .5px #8080807a;
+}
+
+#bakeryNav a{
+    margin-left: 3em;
+    z-index: 1;
+    text-decoration: none;
+    color: #f2fded;
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 1.25em;
+}
+
+/*=============================
+        Specials
+=============================*/
+
+
+
+/*=============================
+            Order
+=============================*/
+#orders h1{
+    margin: 1em 0 0 .5em;
+}
+
+#orders .col{
+    margin: 2em 0 2em 1em;
+}
+
+#orders .col-8{
+    margin: 1.5em;
+}
+
+/*=============================
+            Footer
+=============================*/
+footer{
+    background-color: #e56997;
+}
+
+h3{
+    font-size: 1.2em;
+    text-align: center;
+    color: #f2fded;
+}
+
+
+/*=============================
+       Contact Popover
+=============================*/
+.btn{
+    background-color: #f397c3c5;
+    color: #f2fded;
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 1.5em;
+    width: 8em;
+    float: right;
+}
+
+.btn#help{
+    margin-top: -3.32em;
+}
+
