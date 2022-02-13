@@ -8,7 +8,7 @@ html{
     overflow-x: hidden;
 }
 
-body, h2{
+body, h2, a{
 font-family: 'Arapey', serif;
 }
 
@@ -30,19 +30,22 @@ header img{
     z-index: 0;
     width: 110%;
     height: auto;
-    margin: -0 -1em;
+    margin: 3em -1em;
 }
 
 header h1{
+    position: absolute;
     z-index: 1;
-    margin: .2em 0 -.3em 0;
+    margin: .65em auto 0em 35%;
     text-align: center;
 }
 
-h2{
+h2#headerOverlay{
     z-index: 1;
+    position: relative;
     text-align: center;
-    margin: -2em -1em 4em -1em;
+    width: 110%;
+    margin: -5em -1em 2em 0;
     padding-top: .4em;
     height: 2em;
     background-color: #e8e8e8;
@@ -50,70 +53,76 @@ h2{
 
 header h2{
     font-size:1.1em;
+    position: relative;
 }
 
 .col-sm img {
     width: 80%;
-    margin: 5% 10%;
+    margin: 5% 15%;
     box-shadow: 2px 2px #00000047;
 }
 
 .col-sm p{
     width:80%;
-    margin: 0 10%;
+    margin: 0 15%;
 }
 
 
 
 /*============================
-        Nav Items
+        Nav Items Mobile
 ============================*/
 .nav {
     overflow: hidden;
     position: absolute;
     display: block;
     top: 0;
-    left: 1em;
+    left: 2em;
     width: 200px;
     height: 300px;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.nav .nav-link {
-    display: none;
+.navbar{
+    position: relative;
+    z-index: 1;
+    height: 3em;
+}
+
+.myLinks {
+    display:block;
     text-align: left;
-    position: absolute;
+    position: relative;
     text-decoration: none;
-    top: 2em;
-    left: 0;
+    top: 3em;
+    left: -1em;
+}
+
+a.nav-link{
+    color: #7b8e3a;
+    font-size: 1.3em;
+    padding:.5em 1em;
+    position: relative;
+    z-index: 2;
+}
+
+a.nav-link:hover{
+    color: black;
 }
 
 /* Style the hamburger menu */
-.icon {
+span.navbar-toggler-icon {
     position: absolute;
-    top:.4em;
-    left: 0;
+    top:1em;
+    left: .5em;
+    border: none;
 }
 
-.nav a.icon {
-    z-index:500;
-    color: #7b8e3a;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: .5em;
-}
-
-ul li {
-    display: block;
-}
-
-a.active {
-    background:none;
+.navbar-light .navbar-toggler {
+    border: none;
 }
 
 /*============================
-        Order CSS
+        Order CSS Mobile
 ============================*/
 #orderContainer{
     width: 95%;
@@ -131,11 +140,13 @@ a.active {
     box-shadow: 1px 1px #dfdfdf47;
 }
 
-#orderContainer img{
-
+figcaption{
+    margin-left: 1em;
 }
 
 .col-sm button{
+    width: 12em;
+    margin-left: 1.5em;
     font-size: .65em;
 }
 
@@ -146,9 +157,10 @@ a.active {
 }
 
 /*============================
-        Footer CSS
+        Footer CSS Mobile
 ============================*/
 footer{
+    margin-top: 1em;
     color: #7b8e3a;
     text-align: center;
 }
@@ -162,33 +174,191 @@ footer h3{
 /*==========================================================================================
             RESPONSIVE SCREEN CSS - TABLET
 ===========================================================================================*/
-// Medium devices (tablets, 768px and up)
+/* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
 
+/*========================================
+            Header/Nav CSS Tablet
+========================================*/
+header h1{
+    font-size: 3em;
+    margin-top: .1em;
+}
+
+header h2{
+    font-size: 2em;
+    width: 110%;
+    margin-left -.5em;
+}
+
+
+.nav{
+    top: 1em;
+}
+
+span.navbar-toggler-icon{
+    font-size: 1.2em;
+    margin-top: -.6em;
+}
+
+/*========================================
+            Row 1 CSS Tablet
+========================================*/
+.col-sm img{
+    width: 90%
+}
+
+.col-sm p{
+    width: 90%;
+}
 
 
 
+/*========================================
+           Order CSS Tablet
+========================================*/
+
+#orderContainer{
+    margin-top: 5%;
+}
+
+#orderContainer button{
+    width: 12em;
+    height: auto;
+    margin-left: 2.2em;
+}
+
+figcaption {
+    font-size: 1.5em;
+}
 
 
-
-
+/*========================================
+           Footer CSS Tablet
+========================================*/
+footer h3{
+    font-size: 2em;
+}
 /* Closing brace for media screen*/
 }
 /*==========================================================================================
             RESPONSIVE SCREEN CSS - FULL SIZE
 ===========================================================================================*/
 
-// Large devices (desktops, 992px and up)
+/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     
 
+/*========================================
+            Header/Nav CSS Desktop
+========================================*/
+header h1{
+    z-index: 1;
+    text-align: left;
+    font-size: 4em;
+    margin-left: 2%;
+    margin-top: 1.7%;
+}
+
+header img{
+    margin-top: 5em
+}
+
+h2#headerOverlay{
+    margin-top: -4em;
+}
+
+/*===================================
+        Nav Items CSS Desktop
+===================================*/
 
 
+.nav {
+    width: 100%;
+    text-align: right;
+    margin: -1.7% 0 0 64%;
+}
+
+.myLinks {
+    display: inline-flex;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+    color: #7b8e3a;
+    top: 1.6em;
+    font-size: 1.75em;
+}
 
 
+a.nav-link{
+    display: inline !important;
+    color: #7b8e3a;
+}
 
 
+.navbarToggleExternalContent {
+    display: inline;
+    color: #7b8e3a;
+}
+
+span.navbar-toggler-icon, button.navbar-toggler{
+    color: transparent;
+}
+
+
+/*========================================
+            Row 1 CSS Desktop
+========================================*/
+.col-sm img{
+    width: 90%
+}
+
+.col-sm p{
+    width: 90%;
+}
+
+.row .col-sm{
+    margin: 1% 5%;
+}
+
+.row .col-sm img{
+    margin-top: -3%
+}
+
+
+/*========================================
+           Order CSS Desktop
+========================================*/
+#orderContainer{
+    margin: 4% 0 0 1.5%;
+}
+
+figcaption{
+    margin-left: 10%;
+    margin-top: -2%;
+}
+
+#orderContainer button{
+    font-size: 1em;
+    width: 17em;
+    padding: -10%;
+    height: 3em;
+    margin-left: 16.5%;
+    margin-top: 2%;
+}
+
+#orderContainer .row{
+    margin-top: -3%;
+}
+
+/*========================================
+           Footer CSS Desktop
+========================================*/
+footer h3{
+    font-size: 2em;
+    margin-left: 7%;
+}
 
 /* Closing brace for media screen*/
 }
