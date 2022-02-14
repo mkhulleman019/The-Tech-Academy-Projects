@@ -1,0 +1,24 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Lion Roar</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="./css/lion.css">
+    </head>
+
+    <body>
+        <audio id="lion" src="./audio/roar.mp3"></audio>
+        <img src="./images/lion.jpg" alt="lion" onclick="roar()">
+        <h1>Click the lion</h1>
+
+
+        <script>
+            function roar(){
+                var audio = document.getElementById("lion");
+                audio.play();
+            }
+        </script>
+    </body>
+</html>
+
