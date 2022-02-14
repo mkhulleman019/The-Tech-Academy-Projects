@@ -19,18 +19,23 @@ button{
     font-family: 'Harry Potter', sans-serif;
     border-radius: 8%;
     font-size: 2em;
-    margin-left: 43%;
+    margin-left: 40%;
     margin-top: 5em;
     padding-top: .2em;
-    width: 15%;
+    width: 20%;
     height: 2.2em;
 }
+
+
+/*==================================
+        mo.js styling
+==================================*/
 
 body, html {
     padding: 0;
 }
   
-  body {
+body {
     background: #202223;
 }
 

@@ -1,0 +1,28 @@
+<!Doctype HTML>
+<html lang="en">
+    <head>
+        <title>Sound Page</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="./css/sound.css">
+    </head>
+
+    <body>
+        <h1>Want to hear something?</h1>
+
+        <audio id="sound" src="./audio/onclicksound.wav" type="audio/wav"></audio>
+        <button onclick="play()" type="button">Click Me!</button>
+
+
+
+<!-- My JS-->
+        <script>
+            function play(){
+                var audio = document.getElementById("sound");
+                audio.play();
+            }
+        </script>
+
+    </body>
+
+</html>
