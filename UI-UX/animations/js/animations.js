@@ -17,14 +17,14 @@ const vertLine = new mojs.Burst({
     }
   });
   
-  const horLine = new mojs.Burst({
-    count:    3,
-    radius:   0,
-    degree:   0,
-    angle:    270,
-    y:        100,
-    x:        0,
-    
+    const horLine = new mojs.Burst({
+      count:    3,
+      radius:   0,
+      degree:   0,
+      rotate:    270,
+      y:        100,
+      x:        0,
+      
     children: {
       shape:        'polygon',
       stroke:       [ '#FC2D79', '#11CDC5', 'white'],
