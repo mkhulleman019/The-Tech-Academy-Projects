@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Canyon Hikers | The Key to Your Grand Canyon Adventure</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS and Google Fonts-->
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hanuman&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    
+<!-- AniCollection.css library -->
+        <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="./plan.html">Plan Your Trip</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><input type="text" placeholder="Search">
+                        <audio id="sound" src="./sound/click.mp3" type="audio/wav"></audio>
+                        <img src="./images/search.png" alt="" onclick="playSound()"></li>
+                </ul>
+            </nav>
+<!--Cover Photo-->
+            <div class="cover">
+                <img src="./images/coverPhoto.png" alt="sitting on a canyon">
+            </div>
+
+<!--Logo-->
+            <div class="logo">
+                <img  id= "logo" src="./images/logoWhite.png" alt="Canyon Hikers Logo">
+            </div>
+        </header>
+
+
+        <main>
+            <h1>Memories That Last a Lifetime</h1>
+<!--Activity Cards-->
+                <div id="activityCards">
+        <!--Card 1-->
+                    <div class="cardContainer">
+                        <h2>Horseback Riding</h2>
+                            <div class="innerContainer">
+                                <img src="./images/horse.png" alt="Woman riding horse">
+                                    <div class="cardTextContainer"></div>
+                                    <div class="cardText">
+                                        <p>Enjoy the unforgettable views of the Grand Canyon on horseback.</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+        <!--Card 2-->
+                <div class="cardContainer">
+                    <h2>Enjoying Yourself</h2>
+                        <div class="innerContainer">
+                            <img src="./images/jumping.png" alt="Person jumping over rocks in canyon">
+                                <div class="cardTextContainer"></div>
+                                <div class="cardText">
+                                    <p>With so much to explore, it's always fun in the Grand Canyon!</p>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        <!--Card 3-->
+            <div class="cardContainer">
+                <h2>See Wildlife</h2>
+                    <div class="innerContainer">
+                        <img src="./images/squirrel.png" alt="Squirrel">
+                            <div class="cardTextContainer"></div>
+                            <div class="cardText">
+                                <p>There is tons of wildlife at the Grand Canyon!</p>
+                            </div>
+                    </div>
+            </div>
+        </div>
+
+
+<!--Bottom Section-->
+            <div class="sectionContainer">
+                <h3>PLAN YOUR GRAND CANYON ADVENTURE <br> TODAY!</h3>
+                        <button type="button">Need Ideas?</a></button>
+                            <img src="./images/canyonLineDrawing.png" alt="canyon line drawing">
+            </div>
+        </main>
+
+
+        <footer>
+            <p>Canyon Hikers &copy;2022</p>
+        </footer>
+
+    <script src="./js/script.js"></script>
+
+    </body>
+</html>

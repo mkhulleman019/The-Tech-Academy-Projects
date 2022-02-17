@@ -1,0 +1,233 @@
+/* GOOGLE FONTS
+font-family: 'Hanuman', serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+/*=========================
+    General Styling
+=========================*/
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Hanuman', serif;
+}
+
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+    color: #1C2843;
+}
+
+/*========================
+    Header/Nav Styling
+========================*/
+ul li{
+    position: relative;
+    z-index: 1;
+    display: inline;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+ul{
+    margin-left: 27%;
+    margin-right: 0;
+    width: 100%
+}
+
+nav a{
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: white;
+    margin: 1em 1.5em;
+}
+
+nav a:hover{
+    color: #1C2843;
+}
+
+ul input{
+    position: relative;
+    z-index: 1;
+    margin:-1em 0 auto 1.5em;
+    width: 15em;
+    border-radius: .5em;
+    border: none;
+    height: 2em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+nav img{
+    position: relative;
+    z-index: 2;
+    height: .5em;
+    width: auto;
+    top: .1em;
+    right: 11%;   
+}
+
+.cover{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 2em;;
+}
+
+.logo{
+    position: absolute;
+    z-index: 1;
+    top: 48%;
+}
+
+
+/*========================
+        Main Styling
+========================*/
+main{
+    margin-top: 50%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+h1{
+    font-size: 5em;
+}
+/*========================
+  Activity Cards Styling
+========================*/
+#activityCards{
+   margin-left: 3%; 
+}
+
+.cardContainer{
+    float: left;
+    background-color: #7ca5c68f;
+    border: solid 1px gray;
+    width: 25%;
+    height: 26.5em;
+    text-align: center;
+    margin: 10em 3em;
+}
+
+.cardContainer h2{
+    margin-top: .1em;
+}
+
+.innerContainer{
+    background-color: #7CA5C5 ;
+    height: 24em;
+    width: 100%;
+    margin-top:-1em;
+}
+
+.innerContainer img{
+    margin-top: 1em;
+}
+
+.cardTextContainer{
+    background-color: #4A6481;
+    height: 18em;
+    width: 100%;
+    margin-top: -12em
+
+}
+
+.cardText{
+    margin: -6em 1em 0 1em;
+    font-size: 1.1em;
+    color: white; 
+}
+
+
+/*==============================
+Activity Type Cards - Plan Page
+==============================*/
+.row{
+    margin-left: 21%
+}
+
+.whiteContainer{
+    float: left;
+    width: 30%;
+    height: 20em;
+    margin: 3em;
+    padding: 0;
+    background-color: white;
+    border: .1em solid gray; 
+}
+
+.orangeContainer{
+    width: 100%;
+    height: 16em;
+    background-color: #BD6F5F;
+    margin: 0;
+    padding: 0;
+}
+
+.row img{
+    width: 80%;
+    margin-top: 1.5em;
+}
+
+#activityTypes{
+    margin-bottom: 60em; 
+}
+/*========================
+  Bottom Section Styling
+========================*/
+.sectionContainer{
+    margin-top: 13em;
+    width: 100%;
+    font-size: 4em;
+}
+
+.sectionContainer img{
+    position: relative;
+    z-index: -1;
+    opacity: .2;
+    margin-top: -8em;
+    margin-left: -5em;
+}
+
+
+button{
+    width: 15em ;
+    height: 3em;
+    border-radius: .5em;
+    border: none;
+    background-color: #BD6F5F;
+    font-size: .5em;
+    padding: 0;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+button:hover{
+    background-color: #1C2843;
+}
+
+/*========================
+       Footer Styling
+========================*/
+
+footer{
+    position: relativetive;
+    bottom: 2;
+    margin: 0;
+}
+
+footer p{
+    text-align: center;
+}
