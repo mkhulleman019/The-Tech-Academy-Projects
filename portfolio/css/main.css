@@ -148,6 +148,13 @@ a.active {
     height: auto;
 }
 
+h1#typewriter{
+    width:48%;
+    height: 1em;
+    text-align: center;
+    margin-left: 25%;
+}
+
 .banner img{
     position: relative;
     width: 100%;
