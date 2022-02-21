@@ -38,15 +38,3 @@ function showSlides(n) {
     slides[slideIndex-1].style.display ="block";
     dots[slideIndex-1].className += " active";
 }
-
-
-//-----------------Contact Form Validation-------------------//
-var clientName= document.getElementById("name");
-var email= document.getElementById("email");
-var message = document.getElementById("message");
-
-function validateForm() {
-    if(clientName == "" || email == "" || message ==""){
-        return "All fields are required. Please fill out name, email, and message before sending."
-    }; 
-};
