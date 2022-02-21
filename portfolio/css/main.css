@@ -123,6 +123,9 @@ a.active {
     background:none;
 }
 
+a.active:hover{
+    background: none;
+}
 
 /*========================================
             Header Mobile
@@ -235,12 +238,12 @@ header p{
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.2);
 }
 
 .prev{
-    margin-left: .5em;
-    margin-right: 280px;
+    margin-left: -.5em;
+    margin-right: 318px;
 
 }
 
@@ -250,11 +253,18 @@ header p{
     text-align: center;
     background-color: #fadbdd47;
     color: black;
-    height: 30px;
-    padding-top: 14px;
-    margin-left: 0;
+    height: auto;
+    padding: 1.5em 1em;
+    margin-left: -.8em;
     margin-bottom: -2em;
     
+}
+
+.text p{
+    width: 300px;
+    margin-left: 1em;
+    margin-top: -.3em;
+    margin-bottom: -1em;
 }
 
 /* Dots/Bullets/Indicators */
@@ -444,10 +454,14 @@ p{
 }
 
 .text{
-    font-size: 1.5em;
-    width: 100%;
+    width: 95.3%;
     margin-left: -20%;
-    margin-bottom: -1.5em;
+    margin-bottom: -2em;
+}
+
+.text p{
+    width: 90%;
+    margin-left: 6%;
 }
 
 .prev {
@@ -561,13 +575,11 @@ html {
 /*===================================
         HEADER CSS Fullscreen
 ===================================*/
-header p{
+.banner p{
     z-index: 100;
     display: contents;
     color: ivory;
     font-size: 2em;
-    top: 0;
-    left: 0;
 }
 
 .banner {
@@ -578,7 +590,7 @@ header p{
 .banner h1{
     position: relative;
     top:0;
-    left: -.6em;
+    left: -.5em;
     font-size: 6em;
 }
 
@@ -592,9 +604,10 @@ header p{
 }
 
 .logo img{
-    margin-top: 19em;
-    width: 100px;
-    height: 100px;
+    margin-top: 18em;
+    margin-left: 45%;
+    width: 8em;
+    height:8em;
 }
 
 /*========================
@@ -614,7 +627,7 @@ header p{
 .topnav #myLinks {
     display: inline;
     position: relative;
-    top: 0;
+    top: -.45em;
     right: 0;
 }
 
@@ -647,6 +660,9 @@ a .active {
     background:none;
 }
 
+a.active:hover{
+    background: none;
+}
 /*===================================
         ABOUT ME CSS Fullscreen
 ===================================*/
@@ -682,38 +698,33 @@ a .active {
     width: 30%;
 }
 
-#myWork #slideshowContainer {
-    margin-top: -15em;
-    margin-left: 7em;
-    position: relative;
-}
-
 
 /*===================================
    MY WORK SLIDESHOW CSS Fullscreen
 ===================================*/
 /* Slideshow Container */
-.slideshowContainer {
-    width: 432px;
-    height: 288px;
-    margin: 40px auto auto auto;
+#myWork #slideshowContainer {
+    margin-top: -15em;
+    margin-left: 7em;
+    position: relative;
+    width: 530px;
+    height: 300px;
 }
 
 /* Next & Previous Buttons */
 .prev, .next {
-    top: -11em;
+    top: -8em;
     width: auto;
-    margin-top: 0;
     padding: 16px;
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 /* Position "next" button to the right */
 .next {
     left: 0;
-    top: -10.7em;
+    top: -7.78em;
     border-radius: 3px 0 0 3px;
 }
 
@@ -723,18 +734,19 @@ a .active {
 
 /* Caption Text */
 .text {
-    font-size: 15px;
-    padding: 18px 12px 0 12px;
+    font-size: 1em;
+    padding: 1.5em 0;
     position: relative;
     bottom: 8px;
-    width:95%;
+    width:100%;
+    height: 1.5em;
     margin-top: 0;
     vertical-align: middle;
 }
 
 /* Dots/Bullets/Indicators */
 .dot {
-    margin: 0 2px;
+    margin: 0 .35em 2em .35em;
 }
 
 
@@ -742,7 +754,7 @@ a .active {
         CONTACT CSS Fullscreen
 ===================================*/
 #contact .pinkBG {
-    margin-top:5em;
+    margin-top:9em;
     height: 500px;
 }
 
