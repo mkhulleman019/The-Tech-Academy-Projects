@@ -56,6 +56,11 @@ p {
     margin-left: -5%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /*========================
    HAMBURGER NAV Mobile
 ========================*/
